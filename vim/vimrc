@@ -26,6 +26,11 @@ set nofoldenable                  " disable code folding
 set clipboard=unnamed             " use the system clipboard
 set wildmenu                      " enable bash style tab completion
 set wildmode=list:longest,full
+
+"intuitive splits
+set splitright
+set splitbelow
+
 runtime macros/matchit.vim        " use % to jump between start/end of methods
 
 " put useful info in status bar
