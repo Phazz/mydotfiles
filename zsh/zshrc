@@ -73,3 +73,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 BASE16_SCHEME="railscasts"
 BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+
+# Go back and forth in the directory tree on zsh startup
+# to get tmux using properly .rvmrc file and have rvm properly set
+# for the current directory
+# 1 is alias of 'cd -'.
+cd ..;1
