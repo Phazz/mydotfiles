@@ -79,3 +79,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 # for the current directory
 # 1 is alias of 'cd -'.
 cd ..;1
+
+export PGHOST=/var/pgsql_socket

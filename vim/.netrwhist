@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/pierre/code/dotfiles/vim/bundle/vim-snippets/snippets'
-let g:netrw_dirhist_2='/Users/pierre/code/mercury'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/pierre/code/mercury/app'
+let g:netrw_dirhist_2='/Users/pierre/code/mercury/app/helpers'
+let g:netrw_dirhist_3='/Users/pierre/code/mercury'
+let g:netrw_dirhist_4='/Users/pierre/code/mercury/app'
+let g:netrw_dirhist_5='/Users/pierre/code/mercury/app/helpers'

@@ -69,6 +69,9 @@ endif
 " set leader key to comma
 let mapleader = ","
 
+" ctags including rvm gemset for rails and gems of the project
+map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+
 " check code complexity and duplication for current file
 map <leader>x :!clear &&
       \ echo '----- Complexity -----' && flog % &&
