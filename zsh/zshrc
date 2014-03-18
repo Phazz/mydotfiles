@@ -55,6 +55,10 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+# Disable flow control commands (keeps C-s from freezing everything)
+stty start undef
+stty stop undef
+
 source $ZSH/oh-my-zsh.sh
 
 # Source my custom files after oh-my-zsh so I can override things.
@@ -79,5 +83,3 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 # for the current directory
 # 1 is alias of 'cd -'.
 cd ..;1
-
-export PGHOST=/var/pgsql_socket
