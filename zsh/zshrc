@@ -1,4 +1,4 @@
-# zgitinit and prompt_wunjo_setup must be somewhere in your $fpath, see README for more.
+
 
 setopt promptsubst
 
@@ -71,6 +71,9 @@ export PATH=Users/pierre/.rvm/gems/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/gems/r
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Postgres config
+export PGDATA=/usr/local/var/postgres
 
 ## base16-colors
 # Base16 Shell
