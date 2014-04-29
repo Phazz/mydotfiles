@@ -1,4 +1,6 @@
 --type-add=ruby=.haml,.feature,.scss
+--ignore-file=is:tags
+--ignore-dir=public
 --ignore-dir=vendor
 --ignore-dir=log
 --ignore-dir=tmp

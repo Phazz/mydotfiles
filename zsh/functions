@@ -6,6 +6,12 @@ function precomp {
   `RAILS_ENV=production bundle exec rake assets:precompile`
 }
 
+function blog {
+  open http://127.0.0.1:2368/Ghost
+  cd ~/code/Ghost/
+  npm start
+}
+
 function so { 
   source ~/.zsh/aliases 
   source ~/.zsh/functions
