@@ -12,8 +12,14 @@ function blog {
   npm start
 }
 
-function so { 
-  source ~/.zsh/aliases 
+function bd {
+  cd ~/code/Ghost/
+  buster generate --domain=http://127.0.0.1:2368
+  buster deploy
+}
+
+function so {
+  source ~/.zsh/aliases
   source ~/.zsh/functions
   echo aliases and functions updated
 }
@@ -34,10 +40,10 @@ function git_branch_name {
 
 function git-on-master {
   branch=`git_branch_name`
-  git checkout master && git pull --rebase 
+  git checkout master && git pull --rebase
   git checkout $branch
   git rebase master
-  }
+}
 
 function g {
   if [[ $# > 0 ]]; then
