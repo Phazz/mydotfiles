@@ -1,7 +1,7 @@
 alias z='zeus'
 alias zs='zeus start'
 alias tools='vim ~/Dropbox/code/tools.txt'
-alias zsh_alias='vim ~/code/dotfiles/zsh'
+alias zshalias='vim ~/code/dotfiles/zsh'
 alias za='vim ~/code/dotfiles/zsh'
 alias zsh_git_alias='vim ~/.oh-my-zsh/plugins/git/git.plugin.zsh'
 alias gsp='git smart-pull'
