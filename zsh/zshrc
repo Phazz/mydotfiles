@@ -75,6 +75,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Postgres config
 export PGDATA=/usr/local/var/postgres
 
+# Add data science tools to path
+export PATH=$PATH:/Users/pierre/code/dotfiles/command-line-tools-for-data-science/tools
+
 ## base16-colors
 # Base16 Shell
 BASE16_SCHEME="railscasts"

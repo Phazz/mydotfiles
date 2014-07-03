@@ -67,3 +67,7 @@ function take {
 function gcam {
   git commit -am "$*"
 }
+
+function hpr {
+  hub pull-request -m $1 -b $2
+}
