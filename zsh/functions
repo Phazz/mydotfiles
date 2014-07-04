@@ -71,3 +71,7 @@ function gcam {
 function hpr {
   hub pull-request -m $1 -b $2
 }
+
+function hrc {
+  heroku run console -a $1
+}
