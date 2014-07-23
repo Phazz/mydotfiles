@@ -108,6 +108,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Make sure delete key works as expected
+set backspace=indent,eol,start
+
+imap jj <Esc>
+inoremap <Esc> <Esc>:echoerr 'use jj or ctrl-['<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RENAME CURRENT FILE (thanks Gary Bernhardt)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -142,3 +147,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 "Clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
+
+"save the file before running spec with rspec vim
+let g:rspec_command = ":w \|!rspec {spec}"
