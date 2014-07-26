@@ -14,6 +14,30 @@ prompt wunjo
 ZSH=$HOME/.oh-my-zsh
 bindkey -v
 
+bindkey "^W" backward-kill-word
+bindkey "^X*" expand-word
+bindkey "^[^H" backward-kill-word
+bindkey "^[^_" copy-prev-word
+bindkey "^[\$" spell-word
+bindkey "^[." insert-last-word
+bindkey "^[B" backward-word
+bindkey "^[C" capitalize-word
+bindkey "^[D" kill-word
+bindkey "^[F" forward-word
+bindkey "^[L" down-case-word
+bindkey "^[S" spell-word
+bindkey "^[T" transpose-words
+bindkey "^[U" up-case-word
+bindkey "^[_" insert-last-word
+bindkey "^[b" backward-word
+bindkey "^[c" capitalize-word
+bindkey "^[d" kill-word
+bindkey "^[f" forward-word
+bindkey "^[l" down-case-word
+bindkey "^[s" spell-word
+bindkey "^[t" transpose-words
+bindkey "^[u" up-case-word
+bindkey "^[^?" backward-kill-word
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
