@@ -1,6 +1,11 @@
 require "awesome_print"
 AwesomePrint.irb!
 
+def ls(match=nil)
+  match ||= "*"
+  Dir.glob(match)
+end
+
 class Object
   def interesting_methods
     case self.class

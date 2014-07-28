@@ -12,6 +12,10 @@ function blog {
   npm start
 }
 
+function railsnewapp {
+  rails new $1 -T -d postgresql --skip-bundle
+}
+
 function bd {
   cd ~/code/Ghost/
   buster generate --domain=http://127.0.0.1:2368
@@ -74,4 +78,8 @@ function hpr {
 
 function hrc {
   heroku run console -a $1
+}
+
+function git-delete-merged {
+  git branch --merged | grep -v "\*\|master\|release\|develop" | xargs -n 1 git branch -d
 }
