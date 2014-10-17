@@ -4,6 +4,8 @@ syntax on
 filetype plugin indent on
 syntax enable
 
+set wildmenu
+set wildmode=list:longest
 set autoindent                    " set auto indent
 set noswapfile
 set ts=2                          " set indent to 2 spaces
@@ -144,4 +146,4 @@ map <Leader>a :call RunAllSpecs()<CR>
 :nnoremap <CR> :nohlsearch<cr>
 
 "save the file before running spec with rspec vim
-let g:rspec_command = ":w \|!rspec {spec}"
+let g:rspec_command = ":w \|!bin/rspec {spec}"
