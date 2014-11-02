@@ -41,7 +41,8 @@ runtime macros/matchit.vim        " use % to jump between start/end of methods
 set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
 
 set background=dark
-colorscheme base16-railscasts
+"colorscheme base16-railscasts
+colorscheme gruvbox
 let base16colorspace=256
 " colorscheme solarized
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -125,6 +126,11 @@ endfunction
 map <Leader>n :call RenameFile()<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Create missing directories
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Leader>m :!mkdir -p %:h<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Move to last position when reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -136,6 +142,10 @@ vmap > >gv
 
 imap <c-v> "+p
 
+" Disable Ex mode
+map Q <Nop>
+
+
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
@@ -143,7 +153,11 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 "Clear the search buffer when hitting return
-:nnoremap <CR> :nohlsearch<cr>
+nnoremap <Leader><CR> :nohlsearch<cr>
 
 "save the file before running spec with rspec vim
 let g:rspec_command = ":w \|!bin/rspec {spec}"
+
+"let g:airline_powerline_fonts = 1
+"
+let g:syntastic_always_populate_loc_list = 1
