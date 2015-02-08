@@ -28,3 +28,7 @@ end
 def pbpaste
   `pbpaste`
 end
+
+def r
+  reload!
+end

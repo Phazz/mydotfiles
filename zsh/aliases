@@ -1,4 +1,5 @@
 alias tools='vim ~/Dropbox/code/tools.txt'
+alias notes='vim ~/Dropbox/code/notes.txt'
 alias dotfiles='vim ~/code/dotfiles/'
 alias za='vim ~/code/dotfiles/zsh/aliases && so'
 alias zf='vim ~/code/dotfiles/zsh/functions && so'

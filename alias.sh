@@ -14,5 +14,7 @@ ln -s $PWD/irb/irbrc $HOME/.irbrc
 
 ln -s $PWD/bin $HOME/bin
 
+ln -s $PWD/emacs/emacs $HOME/.emacs
+
 #ln -s $PWD/bash/.bashrc $HOME/.bashrc
 #ln -s $PWD/bash/.bash_profile $HOME/.bash_profile

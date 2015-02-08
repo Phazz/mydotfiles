@@ -2,6 +2,15 @@ function hist {
   history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
 
+function sk {
+  ps aux | grep sidekiq | awk '{print $2}' | xargs kill -9
+  be sidekiq
+}
+
+function restore_dump {
+  pg_restore --verbose --clean --no-acl --no-owner -h localhost -U pierre -d $1 $2
+}
+
 function precomp {
   `RAILS_ENV=production bundle exec rake assets:precompile`
 }

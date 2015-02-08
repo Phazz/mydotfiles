@@ -161,3 +161,6 @@ let g:rspec_command = ":w \|!bin/rspec {spec}"
 "let g:airline_powerline_fonts = 1
 "
 let g:syntastic_always_populate_loc_list = 1
+
+"vim-jsx syntax highlighting and indenting also in js file
+let g:jsx_ext_required = 0
