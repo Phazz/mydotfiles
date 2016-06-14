@@ -94,7 +94,7 @@ source $HOME/.zsh/functions
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH
-export PATH=Users/pierre/.rvm/gems/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/pierre/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+#export PATH=Users/pierre/.rvm/gems/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/pierre/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -122,5 +122,5 @@ eval "$(direnv hook zsh)"
 
 REPORTTIME=3
 
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
