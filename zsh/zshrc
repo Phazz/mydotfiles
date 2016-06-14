@@ -46,6 +46,7 @@ bindkey '^[^?' backward-kill-word
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
 
 # Example aliases
 # alias zshconfig="sublime ~/.zshrc"
@@ -102,9 +103,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Postgres config
 export PGDATA=/usr/local/var/postgres
 
-# Add data science tools to path
-export PATH=$PATH:/Users/pierre/code/dotfiles/command-line-tools-for-data-science/tools
-
 ## base16-colors
 # Base16 Shell
 BASE16_SCHEME="railscasts"
@@ -118,9 +116,9 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 cd ..;1
 
 # direnv
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 REPORTTIME=3
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 

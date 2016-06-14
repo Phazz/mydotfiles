@@ -1,22 +1,22 @@
 #!/bin/bash
 
-ln -s $PWD/vim $HOME/.vim
-ln -s $PWD/vim/vimrc $HOME/.vimrc
+ln -sf $PWD/vim $HOME/.vim
+ln -sf $PWD/vim/vimrc $HOME/.vimrc
 
-ln -s $PWD/zsh $HOME/.zsh
-ln -s $PWD/zsh/zshrc $HOME/.zshrc
+ln -sf $PWD/zsh $HOME/.zsh
+ln -sf $PWD/zsh/zshrc $HOME/.zshrc
 
-ln -s $PWD/tmux/tmuxconf $HOME/.tmux.conf
+ln -sf $PWD/tmux/tmuxconf $HOME/.tmux.conf
 
-ln -s $PWD/ack/ackrc $HOME/.ackrc
+ln -sf $PWD/ack/ackrc $HOME/.ackrc
 
-ln -s $PWD/irb/irbrc $HOME/.irbrc
+ln -sf $PWD/irb/irbrc $HOME/.irbrc
 
-ln -s $PWD/bin $HOME/bin
+ln -sf $PWD/bin $HOME/bin
 
-ln -s $PWD/emacs/emacs $HOME/.emacs
+ln -sf $PWD/emacs/emacs $HOME/.emacs
 
-ln -s $PWD/laptpop/laptop $HOME/.laptop.local
+ln -sf $PWD/laptpop/laptop $HOME/.laptop.local
 
-#ln -s $PWD/bash/.bashrc $HOME/.bashrc
-#ln -s $PWD/bash/.bash_profile $HOME/.bash_profile
+#ln -sf $PWD/bash/.bashrc $HOME/.bashrc
+#ln -sf $PWD/bash/.bash_profile $HOME/.bash_profile
