@@ -42,3 +42,4 @@ brew cask install 'iterm2'
 brew cask install 'izip'
 apm install sync-settings
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git config --global core.editor "vim"
