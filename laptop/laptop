@@ -39,4 +39,5 @@ brew_cask_install_or_upgrade 'nylas-n1'
 brew_cask_install_or_upgrade 'slack'
 brew_cask_install_or_upgrade 'deco'
 brew_cask_install_or_upgrade 'iterm2'
+brew_cask_install_or_upgrade 'izip'
 apm install sync-settings
