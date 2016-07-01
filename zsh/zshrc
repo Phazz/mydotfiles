@@ -122,4 +122,5 @@ REPORTTIME=3
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-
+#the fuck command https://github.com/nvbn/thefuck#manual-installation
+eval "$(thefuck --alias)"
