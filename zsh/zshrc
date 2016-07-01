@@ -124,3 +124,6 @@ REPORTTIME=3
 
 #the fuck command https://github.com/nvbn/thefuck#manual-installation
 eval "$(thefuck --alias)"
+
+#rbenv
+eval "$(rbenv init -)"
