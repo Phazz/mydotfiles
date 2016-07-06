@@ -36,7 +36,7 @@ set wildmode=list:longest,full
 set splitright
 set splitbelow
 
-runtime macros/matchit.zip        " use % to jump between start/end of methods
+runtime macros/matchit.vim " use % to jump between start/end of methods
 
 " put useful info in status bar
 set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%l,%c]\ [%L,%p%%]
