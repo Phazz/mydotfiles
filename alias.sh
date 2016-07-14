@@ -14,7 +14,7 @@ ln -sf $PWD/irb/irbrc $HOME/.irbrc
 
 ln -sf $PWD/bin $HOME/bin
 
-ln -sf $PWD/emacs/emacs $HOME/.emacs
+#ln -sf $PWD/emacs/emacs $HOME/.emacs
 
 ln -sf $PWD/laptpop/laptop $HOME/.laptop.local
 

@@ -45,6 +45,9 @@ brew cask install 'izip'
 brew cask install 'little-snitch'
 brew cask install 'filezilla'
 brew cask install 'visual-studio-code'
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
+brew linkapps
 apm install sync-settings
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git config --global core.editor "vim"
