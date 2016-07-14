@@ -92,3 +92,7 @@ function hrc {
 function git-delete-merged {
   git branch --merged | grep -v "\*\|master\|release\|develop" | xargs -n 1 git branch -d
 }
+
+function dterm {
+  docker exec -it $1 bash
+}
