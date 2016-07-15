@@ -20,11 +20,13 @@ brew_cask_install_or_upgrade() {
 }
 
 brew tap caskroom/cask
+brew update
 brew install 'brew-cask'
 brew install 'thefuck'
 brew install 'jmeter'
 brew install 'vim'
 brew install 'rbenv'
+brew install 'elixir'
 brew cask install 'java'
 brew cask install 'dropbox'
 brew cask install 'google-chrome'
@@ -45,12 +47,23 @@ brew cask install 'izip'
 brew cask install 'little-snitch'
 brew cask install 'filezilla'
 brew cask install 'visual-studio-code'
+# Phoenix
+mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
+# Emacs
 brew tap d12frosted/emacs-plus
 brew install emacs-plus --with-cocoa --with-gnutls --with-librsvg --with-imagemagick --with-spacemacs-icon
 brew linkapps
+# Atom sync settings
 apm install sync-settings
+# Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Git base config
 git config --global core.editor "vim"
 git config --global user.name "Pierre Lemperiere"
 git config --global user.email pierre.lemperiere@gmail.com
+# Meteor + Node
 curl https://install.meteor.com/ | sh
+# Postgres
+echo "============================================================="
+echo "You have now to install Postgres from http://postgresapp.com/"
+echo "Install also Postico the Postgres client https://eggerapps.at/postico/"
