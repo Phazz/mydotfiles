@@ -22,10 +22,17 @@ brew_cask_install_or_upgrade() {
 brew tap caskroom/cask
 brew update
 brew install 'brew-cask'
+brew install 'ack'
 brew install 'thefuck'
 brew install 'jmeter'
 brew install 'vim'
 brew install 'rbenv'
+brew install 'nvm'
+# Setup NVM
+mkdir ~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+brew install 'node'
 brew install 'elixir'
 brew cask install 'java'
 brew cask install 'dropbox'
@@ -61,8 +68,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git config --global core.editor "vim"
 git config --global user.name "Pierre Lemperiere"
 git config --global user.email pierre.lemperiere@gmail.com
-# Meteor + Node
-curl https://install.meteor.com/ | sh
 # Postgres
 echo "============================================================="
 echo "You have now to install Postgres from http://postgresapp.com/"
