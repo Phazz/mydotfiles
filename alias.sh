@@ -14,9 +14,7 @@ ln -sf $PWD/irb/irbrc $HOME/.irbrc
 
 ln -sf $PWD/bin $HOME/bin
 
-#ln -sf $PWD/emacs/emacs $HOME/.emacs
+ln -sf $PWD/ctags/ctags $HOME/.ctags
 
 ln -sf $PWD/laptpop/laptop $HOME/.laptop.local
 
-#ln -sf $PWD/bash/.bashrc $HOME/.bashrc
-#ln -sf $PWD/bash/.bash_profile $HOME/.bash_profile
