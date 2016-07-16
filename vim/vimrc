@@ -166,4 +166,4 @@ let g:syntastic_always_populate_loc_list = 1
 let g:jsx_ext_required = 0
 
 " Setup location of erlang for Alchimist
-"let g:alchemist#elixir_erlang_src = "/usr/local/lib"
+let g:alchemist#elixir_erlang_src = "/usr/local/share/src/"
