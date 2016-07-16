@@ -111,11 +111,8 @@ nnoremap <C-l> <C-w>l
 set backspace=indent,eol,start
 
 imap jj <Esc>
-"inoremap <Esc> <Esc>:echoerr 'use jj or ctrl-['<CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" RENAME CURRENT FILE (thanks Gary Bernhardt)
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Rename current file (thanks Gary Bernhardt)
 function! RenameFile()
   let old_name = expand('%')
   let new_name = input('New file name: ', expand('%'), 'file')
@@ -167,3 +164,6 @@ let g:syntastic_always_populate_loc_list = 1
 
 "vim-jsx syntax highlighting and indenting also in js file
 let g:jsx_ext_required = 0
+
+" Setup location of erlang for Alchimist
+"let g:alchemist#elixir_erlang_src = "/usr/local/lib"
