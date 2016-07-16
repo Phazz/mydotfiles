@@ -70,6 +70,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git config --global core.editor "vim"
 git config --global user.name "Pierre Lemperiere"
 git config --global user.email pierre.lemperiere@gmail.com
+# Install Consola font
+curl https://gist.githubusercontent.com/Phazz/941c3c1bac48e102ae065a7849a7cdba/raw/f163012bfa836d7db9db9ecf3e08d7f77bb43650/consolas.sh | sh -
 # Postgres
 echo "============================================================="
 echo "You have now to install Postgres from http://postgresapp.com/"
