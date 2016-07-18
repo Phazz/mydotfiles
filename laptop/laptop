@@ -31,8 +31,8 @@ brew install 'nvm'
 # Setup NVM
 mkdir ~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+nvm install node
 
-brew install 'node'
 brew install 'elixir'
 brew cask install 'kindle'
 brew cask install 'send-to-kindle'
@@ -52,7 +52,6 @@ brew cask install 'slack'
 brew cask install 'deco'
 brew cask install 'iterm2'
 brew cask install 'izip'
-brew cask install 'little-snitch'
 brew cask install 'filezilla'
 brew cask install 'visual-studio-code'
 # Phoenix
