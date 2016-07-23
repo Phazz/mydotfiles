@@ -18,3 +18,4 @@ ln -sf $PWD/ctags/ctags $HOME/.ctags
 
 ln -sf $PWD/laptpop/laptop $HOME/.laptop.local
 
+ln -sf $PWD/.iex.exs $HOME/.iex.exs
