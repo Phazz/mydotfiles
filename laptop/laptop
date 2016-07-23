@@ -34,6 +34,14 @@ source $(brew --prefix nvm)/nvm.sh
 nvm install node
 
 brew install 'elixir'
+# Setup Nerves
+brew install 'fwup'
+brew install 'squashfs'
+brew install 'coreutils'
+mix local.hex
+mix local.rebar
+mix archive.install https://github.com/nerves-project/archives/raw/master/nerves_bootstrap.ez
+
 brew install 'mongodb'
 # Setup mongodb db folder
 sudo mkdir /data/db
