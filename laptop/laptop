@@ -34,6 +34,7 @@ source $(brew --prefix nvm)/nvm.sh
 nvm install node
 
 brew install 'elixir'
+brew install 'jq'
 # Setup Nerves
 brew install 'fwup'
 brew install 'squashfs'
