@@ -27,6 +27,7 @@ brew install 'thefuck'
 brew install 'jmeter'
 brew install 'vim'
 brew install 'rbenv'
+brew install 'direnv'
 brew install 'nvm'
 # Setup NVM
 mkdir ~/.nvm
