@@ -126,14 +126,18 @@ REPORTTIME=3
 eval "$(thefuck --alias)"
 
 #rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 #NVM
-export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+  #. "$(brew --prefix nvm)/nvm.sh"
 
 # Ctrl + U backward kill line
 bindkey \^U backward-kill-line
 
 # Yank
 bindkey \^Y yank
+
+#pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
