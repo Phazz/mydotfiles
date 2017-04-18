@@ -126,15 +126,15 @@ REPORTTIME=3
 eval "$(thefuck --alias)"
 
 #rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 #pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 #NVM
-export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+  #. "$(brew --prefix nvm)/nvm.sh"
 
 # Ctrl + U backward kill line
 bindkey \^U backward-kill-line
@@ -147,3 +147,7 @@ export LANG=en_US.UTF-8
 
 #getttext for python makemessages
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+#pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
