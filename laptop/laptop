@@ -27,6 +27,11 @@ brew install 'thefuck'
 brew install 'jmeter'
 brew install 'vim'
 brew install 'rbenv'
+brew install 'pyenv'
+brew install 'pyenv-virtualenv'
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 brew install 'nvm'
 # Setup NVM
 mkdir ~/.nvm
@@ -49,6 +54,7 @@ sudo mkdir /data/db
 sudo chown -R $USER /data/db
 
 brew cask install 'licecap'
+brew cask install 'numi'
 brew cask install 'crashplan'
 brew cask install 'kindle'
 brew cask install 'send-to-kindle'
