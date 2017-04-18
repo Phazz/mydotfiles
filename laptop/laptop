@@ -21,8 +21,8 @@ brew_cask_install_or_upgrade() {
 
 brew tap caskroom/cask
 brew update
-brew install 'brew-cask'
 brew install 'ack'
+brew install 'the_silver_searcher'
 brew install 'thefuck'
 brew install 'jmeter'
 brew install 'vim'
@@ -55,7 +55,6 @@ sudo chown -R $USER /data/db
 
 brew cask install 'licecap'
 brew cask install 'numi'
-brew cask install 'crashplan'
 brew cask install 'kindle'
 brew cask install 'send-to-kindle'
 brew cask install 'java'
@@ -66,13 +65,10 @@ brew cask install 'skype'
 brew cask install '1password'
 brew cask install 'alfred'
 brew cask install 'spectacle'
-brew cask install 'evernote'
 brew cask install 'google-drive'
 brew cask install 'deezer'
-brew cask install 'atom'
 brew cask install 'slack'
 brew cask install 'iterm2'
-brew cask install 'spark'
 brew cask install 'sketch'
 brew cask install 'imageoptim'
 brew cask install 'garmin-express'
