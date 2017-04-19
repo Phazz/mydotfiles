@@ -94,14 +94,20 @@ source $HOME/.zsh/aliases
 source $HOME/.zsh/functions
 
 # Customize to your needs...
-export PATH=/usr/local/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
 #export PATH=Users/pierre/.rvm/gems/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/pierre/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Postgres config
-export PGDATA=/usr/local/var/postgres
+#export PGDATA=/usr/local/var/postgres
+export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+export PATH="/Users/pierre/.pyenv/shims:$PATH"
+
+#Google Cloud SDK
+export PATH="/Users/pierre/google-cloud-sdk/bin:$PATH"
+source '/Users/pierre/google-cloud-sdk/path.zsh.inc'
 
 ## base16-colors
 # Base16 Shell
@@ -128,6 +134,9 @@ eval "$(thefuck --alias)"
 #rbenv
 eval "$(rbenv init -)"
 
+#pyenv
+eval "$(pyenv init -)"
+
 #NVM
 export NVM_DIR="$HOME/.nvm"
   . "$(brew --prefix nvm)/nvm.sh"
@@ -137,3 +146,4 @@ bindkey \^U backward-kill-line
 
 # Yank
 bindkey \^Y yank
+

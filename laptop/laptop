@@ -25,10 +25,10 @@ brew install 'brew-cask'
 brew install 'ack'
 brew install 'thefuck'
 brew install 'jmeter'
-brew install 'vim'
 brew install 'rbenv'
 brew install 'direnv'
 brew install 'nvm'
+brew install 'vim --override-system-vi'
 # Setup NVM
 mkdir ~/.nvm
 source $(brew --prefix nvm)/nvm.sh
