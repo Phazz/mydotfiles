@@ -21,12 +21,16 @@ brew_cask_install_or_upgrade() {
 
 brew tap caskroom/cask
 brew update
-brew install 'brew-cask'
 brew install 'ack'
+brew install 'the_silver_searcher'
 brew install 'thefuck'
 brew install 'jmeter'
 brew install 'rbenv'
-brew install 'direnv'
+brew install 'pyenv'
+brew install 'pyenv-virtualenv'
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 brew install 'nvm'
 brew install 'vim --override-system-vi'
 # Setup NVM
@@ -50,7 +54,7 @@ sudo mkdir /data/db
 sudo chown -R $USER /data/db
 
 brew cask install 'licecap'
-brew cask install 'crashplan'
+brew cask install 'numi'
 brew cask install 'kindle'
 brew cask install 'send-to-kindle'
 brew cask install 'java'
@@ -61,16 +65,17 @@ brew cask install 'skype'
 brew cask install '1password'
 brew cask install 'alfred'
 brew cask install 'spectacle'
-brew cask install 'evernote'
 brew cask install 'google-drive'
 brew cask install 'deezer'
-brew cask install 'atom'
 brew cask install 'slack'
-brew cask install 'deco'
 brew cask install 'iterm2'
-brew cask install 'izip'
+brew cask install 'sketch'
+brew cask install 'imageoptim'
+brew cask install 'garmin-express'
+brew cask install 'the-unarchiver'
 brew cask install 'filezilla'
 brew cask install 'visual-studio-code'
+
 # Phoenix
 mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
 # Emacs
