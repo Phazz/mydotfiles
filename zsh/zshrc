@@ -95,7 +95,6 @@ source $HOME/.zsh/functions
 
 # Customize to your needs...
 export PATH="/usr/local/bin:$PATH"
-#export PATH=Users/pierre/.rvm/gems/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/pierre/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/Users/pierre/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -121,18 +120,10 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 # 1 is alias of 'cd -'.
 cd ..;1
 
-# direnv
-#eval "$(direnv hook zsh)"
-
 REPORTTIME=3
-
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #the fuck command https://github.com/nvbn/thefuck#manual-installation
 eval "$(thefuck --alias)"
-
-#rbenv
-#eval "$(rbenv init -)"
 
 #pyenv
 eval "$(pyenv init -)"
@@ -140,10 +131,6 @@ eval "$(pyenv virtualenv-init -)"
 
 #pyenv
 eval "$(pyenv init -)"
-
-#NVM
-#export NVM_DIR="$HOME/.nvm"
-  #. "$(brew --prefix nvm)/nvm.sh"
 
 # Ctrl + U backward kill line
 bindkey \^U backward-kill-line
