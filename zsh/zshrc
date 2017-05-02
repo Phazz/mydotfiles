@@ -129,9 +129,6 @@ eval "$(thefuck --alias)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-#pyenv
-eval "$(pyenv init -)"
-
 # Ctrl + U backward kill line
 bindkey \^U backward-kill-line
 
@@ -143,3 +140,7 @@ export LANG=en_US.UTF-8
 
 #getttext for python makemessages
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
