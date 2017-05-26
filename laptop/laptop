@@ -23,6 +23,7 @@ brew tap caskroom/cask
 brew update
 brew install 'ack'
 brew install 'the_silver_searcher'
+brew install 'node'
 brew install 'thefuck'
 brew install 'redis'
 brew install 'hub'
@@ -33,12 +34,7 @@ brew install 'pyenv-virtualenv'
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-brew install 'nvm'
 brew install 'vim --override-system-vi'
-# Setup NVM
-mkdir ~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-nvm install node
 
 brew install 'elixir'
 brew install 'jq'
