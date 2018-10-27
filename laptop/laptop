@@ -64,7 +64,6 @@ brew cask install '1password'
 brew cask install 'alfred'
 brew cask install 'spectacle'
 brew cask install 'google-drive'
-brew cask install 'deezer'
 brew cask install 'slack'
 brew cask install 'iterm2'
 brew cask install 'sketch'
@@ -73,6 +72,8 @@ brew cask install 'garmin-express'
 brew cask install 'the-unarchiver'
 brew cask install 'filezilla'
 brew cask install 'visual-studio-code'
+brew cask install 'gitify'
+brew cask install 'spotify'
 
 # Phoenix
 mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez

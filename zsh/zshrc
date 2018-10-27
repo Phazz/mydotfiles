@@ -105,8 +105,8 @@ export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 export PATH="/Users/pierre/.pyenv/shims:$PATH"
 
 #Google Cloud SDK
-export PATH="/Users/pierre/google-cloud-sdk/bin:$PATH"
-source '/Users/pierre/google-cloud-sdk/path.zsh.inc'
+#export PATH="/Users/pierre/google-cloud-sdk/bin:$PATH"
+#source '/Users/pierre/google-cloud-sdk/path.zsh.inc'
 
 ## base16-colors
 # Base16 Shell
@@ -144,3 +144,10 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Node
+export PATH="./node_modules/.bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
